@@ -5,6 +5,7 @@
 
 	display: grid;
 	// grid-template-columns: repeat(3, 1fr);
+	// its responsive, auto-fit try to fit as many feature elements as possible, when they reach min 25rem new rows are created
 	grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
 	grid-gap: 6rem;
 	align-items: start;
