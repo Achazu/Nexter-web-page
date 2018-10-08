@@ -1,5 +1,80 @@
-.sidebar{
+
+.sidebar {
 	background-color: $color-primary;
 	grid-column: sidebar-start / sidebar-end;
 	grid-row: 1 / -1;
+	display: flex;
+	justify-content: center;
+
+	&__checkbox{
+		display: none;
+	}
+	&__button {
+		z-index: 2000;		
+		
+		height: 4.5rem;
+		width: 4.5rem;
+		margin-top: 4rem;
+		cursor: pointer;
+		display: flex;
+	}
+	&__button:hover &__icon::before{
+		transform: translateY(-.3rem);	
+
+	}
+	&__button:hover &__icon::after{
+		transform: translateY(-1.5rem);	
+	}
+
+	&__icon {
+		z-index: 2000;		
+		
+		background-color: #fff;
+		height: 2px;
+		width: 4.5rem;
+		align-self: center;
+		transition: all .1s;
+		&::after,
+		&::before {
+			content: '';
+			background-color: #fff;
+			height: 2px;
+			width: 4.5rem;
+			display: block;
+			transition: all .3s;
+		}
+		&::after {
+			transform: translateY(-.5rem);	
+		}
+		&::before {
+			transform: translateY(-1.3rem);
+		}
+	}
+	&__checkbox:checked +&__button &__icon{
+		background-color: transparent;
+	}
+	&__checkbox:checked + &__button &__icon::before{
+		transform: translateY(0) rotate(-45deg);
+	}
+	&__checkbox:checked + &__button &__icon::after{
+		transform: translateY(-1.8rem) rotate(45deg);
+	}
+	&__background {
+		height: 100vh;
+		width: .1rem;
+		position: fixed;
+		left: -6.5rem;
+		background-color: $color-primary;
+		z-index: 1000;
+		visibility: hidden;
+		transition: all 2s;
+		
+	}
+	&__checkbox:checked ~ &__background {
+		transform: scale(80);
+		width: 100vw;
+		visibility: visible;
+		transition: all 4s;
+
+	}
 }
