@@ -1,17 +1,27 @@
 .features{
 	grid-column: center-start / center-end;
 	margin: 15rem 0;
-
-	display: grid;
-	// grid-template-columns: repeat(3, 1fr);
-	// its responsive, auto-fit try to fit as many feature elements as possible, when they reach min 25rem new rows are created
-	grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-	grid-gap: 6rem;
-	align-items: start;
 	
+	@supports(display: grid){
+		display: grid;
+		// grid-template-columns: repeat(3, 1fr);
+		// its responsive, auto-fit try to fit as many feature elements as possible, when they reach min 25rem new rows are created
+		grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+		grid-gap: 6rem;
+		align-items: start;
+	}
 }
 
 .feature{
+	// if grid is supported, float is ignored by default (vs. grid). Width and mrg-bot must be disabled manually 
+	float: left;
+	width: 33.3333%;
+	margin-bottom: 6rem;
+	@supports(display: grid){
+		width: auto;
+		margin-bottom: 0;
+	}
+
 	display: grid;	
 	// min content because if we later change the icon width it will automatically adjust
 	grid-template-columns: min-content 1fr;
