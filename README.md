@@ -13,6 +13,9 @@ https://achazu.github.io/Nexter-web-page/
 ![screen shot 2018-10-09 at 12 57 33](https://user-images.githubusercontent.com/37018331/46665205-7c57f300-cbc3-11e8-9f7b-5dc558625322.png)
 
 
+![screen shot 2018-10-09 at 12 57 58](https://user-images.githubusercontent.com/37018331/46665203-7c57f300-cbc3-11e8-9960-76f2e5352c41.png)
+
+
 ![screen shot 2018-10-09 at 12 58 04](https://user-images.githubusercontent.com/37018331/46665195-795d0280-cbc3-11e8-875d-57a3c2ff4538.png)
 
 ![screen shot 2018-10-09 at 12 58 14](https://user-images.githubusercontent.com/37018331/46665197-795d0280-cbc3-11e8-980d-c499e81112a9.png)
@@ -28,7 +31,6 @@ https://achazu.github.io/Nexter-web-page/
 ![screen shot 2018-10-09 at 12 59 26](https://user-images.githubusercontent.com/37018331/46665200-795d0280-cbc3-11e8-964f-6fd069692977.png)
 ![screen shot 2018-10-09 at 12 59 34](https://user-images.githubusercontent.com/37018331/46665201-79f59900-cbc3-11e8-9713-298e75beb93e.png)
 
-![screen shot 2018-10-09 at 12 57 58](https://user-images.githubusercontent.com/37018331/46665203-7c57f300-cbc3-11e8-9960-76f2e5352c41.png)
 
 
 
